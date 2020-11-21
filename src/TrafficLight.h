@@ -23,9 +23,18 @@ class Vehicle;
 template <class T>
 class MessageQueue
 {
-public:
+    public:
+
+        MessageQueue(){};
+        ~MessageQueue(){};
+        void send(T &&msg); //Send should take an rvalue reference of type TrafficLightPhase
+        T receive();        //receive should return this type.
 
 private:
+
+    std::condition_variable _cond;
+    std::mutex _mtx;
+    std::deque<T>  _queue;
     
 };
 
