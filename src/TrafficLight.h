@@ -6,6 +6,11 @@
 #include <condition_variable>
 #include "TrafficObject.h"
 
+
+enum TrafficLightPhase 
+{
+    RED=0,GREEN,YELLOW
+};
 // forward declarations to avoid include cycle
 class Vehicle;
 
@@ -30,7 +35,7 @@ private:
 // can be either „red“ or „green“. Also, add the private method „void cycleThroughPhases()“. 
 // Furthermore, there shall be the private member _currentPhase which can take „red“ or „green“ as its value. 
 
-class TrafficLight
+class TrafficLight :TrafficObject
 {
 public:
     // constructor / desctructor
@@ -38,6 +43,8 @@ public:
     // getters / setters
 
     // typical behaviour methods
+    void waitForGreen();
+    void simulate();
 
 private:
     // typical behaviour methods
