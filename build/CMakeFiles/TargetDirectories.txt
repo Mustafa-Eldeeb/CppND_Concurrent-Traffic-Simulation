@@ -1,3 +1,0 @@
-/media/darsh/Secondary/cpp_nanodegree/CppND-Program-a-Concurrent-Traffic-Simulation/build/CMakeFiles/rebuild_cache.dir
-/media/darsh/Secondary/cpp_nanodegree/CppND-Program-a-Concurrent-Traffic-Simulation/build/CMakeFiles/traffic_simulation.dir
-/media/darsh/Secondary/cpp_nanodegree/CppND-Program-a-Concurrent-Traffic-Simulation/build/CMakeFiles/edit_cache.dir
