@@ -99,7 +99,7 @@ void TrafficLight::cycleThroughPhases()
             }
             //Todo :sends an update method to the message queue using move semantics.
            
-           
+           _light_queue.send(std::move(_currentPhase));
            
            
            prev_time =std::chrono::steady_clock::now();
